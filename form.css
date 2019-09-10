@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box; 
+}
+
+body {
+    background: green;
+}
+form {
+    max-width: 400px;
+
+     margin: 200px auto 0 auto;
+     border: 2px solid #ccc;
+     padding: 15px;
+     
+}
+form .row{
+     width: 100px;
+     margin-bottom: 15px;
+     height: 25px;
+     padding: 5px;
+     
+}
