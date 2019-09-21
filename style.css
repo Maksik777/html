@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body, ul {
     padding: 0;
     margin:0;
@@ -16,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin: 15px 0;
     background: blue;
 }
 
@@ -31,13 +35,13 @@ header ul {
 
 header ul a {
     padding: 10px 25px;
-    display: block;
     background: green;
     margin: 5px;
+    display: block;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold; 
 }
 
@@ -46,12 +50,20 @@ header ul a {
     flex-wrap: wrap;
 }
  #page .product {
-    max-width: 220px;
-    
+    max-width: 235px;
+    border:1px solid #ccc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 15px 15px;
+    padding: 15px;
+
+
  }
 
  #page .product img {
-     max-width: 100%
+     max-width: 100%;
+     display: block;
  }
 
  #page {
@@ -61,4 +73,19 @@ header ul a {
 
  #sidebar {
     width: 25%;
+}
+
+#page .product button {
+    background: green;
+    color: #fff;
+    padding: 10px 15px;
+    color: 22px;
+    font-size: 22px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#page .product button:hover {
+    background: #9ad87f;
 }
