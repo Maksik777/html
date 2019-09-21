@@ -73,6 +73,20 @@ header ul a {
 
  #sidebar {
     width: 25%;
+    border: 1px solid #ccc;
+    padding: 15px;
+
+}
+
+#sidebar ul li a {
+    display:  block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
+
+
 }
 
 #page .product button {
