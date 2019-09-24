@@ -48,6 +48,7 @@ header ul a {
 #container, #page {
     display:flex;
     flex-wrap: wrap;
+    align-items: start;
 }
  #page .product {
     max-width: 235px;
@@ -80,7 +81,7 @@ header ul a {
 
 #sidebar ul li a {
     display:  block;
-    padding: 10px 15px;
+    padding: 10px;
     border: 1px solid #ccc;
     margin: 5px;
     text-decoration: none;
@@ -102,4 +103,27 @@ header ul a {
 }
 #page .product button:hover {
     background: #9ad87f;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 26px;
+    width: 100%;
+
+}
+
+
+@media(max-width:700px) {
+    #sidebar #page {
+        width: 100%;
+    }
+    #page {
+        justify-content:center;
+        margin-top:15px;
+    }
 }
