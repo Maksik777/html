@@ -16,6 +16,9 @@ li {
     list-style: none;
 }
 
+h2 h3 h4 {
+
+}
 
 #container {
     max-width: 1000px;
@@ -75,7 +78,7 @@ position: relative;
     margin: auto;
 }
 
-header {
+#header {
     display: flex;
     flex-wrap:wrap;
 }
@@ -92,10 +95,28 @@ border-right: 1px solid #cac8c5;
 
 }
 
-#header-menu {
-    width: 100%;
+#header-menu{
+    width:100%;
+    border-top: 1px solid #ababab;
+    border-bottom: 1px solid #ababab;
 }
-nav {
+
+#header-menu ul{
+    display:flex;
+}
+
+#header-menu ul li a{
+    display: block;
+    padding: 15px 35px;
+    color: #ababab;
+    text-transform: uppercase;
+}
+
+#header-menu ul li:first-child a{
+    padding-left: 0;
+}
+
+#nav {
     width: 100%;
 }
 
@@ -124,6 +145,8 @@ nav {
 
 #banners .bn-right .img-block {
     position: relative;
+    height: 180px;
+    overflow: hidden;
 }
 #banners .bn-right h3 {
     position: absolute;
@@ -153,5 +176,47 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin: 10px 0;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0 0 0;
+    border-top: 1px solid gray;
+    padding: 30px 0 0 0;
+
+}
+
+#content .item {
+    width: 33.33%;
+    border-right: 1px solid grey;
+
+}
+#content.item h2 {
+    margin: 0 0 30px 0;
+}
+#content .about, #content .contacts {
+    padding: 0 40px;
+}
+
+
+#content .about {
+    border-left:  1px solid grey;
+    border-right:  1px solid grey;
+    padding: 0 40px;
+}
+.news {
+    padding-rihgt:  
+}
+.news .block-news {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px dashed gray;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.news .block-news h4 {
+    margin: 0 0 5px 0 ;
 }
 
